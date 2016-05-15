@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>setup</class>
+ <widget class="QMainWindow" name="setup">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>668</width>
+    <height>521</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>668</width>
+    <height>521</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>668</width>
+    <height>521</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>BAMBİLO PROJECT PAGE</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow
+{
+ background-color:#4b4b4b
+}
+
+QStatusBar
+{
+  color:rgb(168, 168, 168);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>40</y>
+      <width>611</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTextBrowser
+{
+ background-color:rgb(118, 118, 118);
+ color:rgb(255, 255, 255);
+}</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>360</y>
+      <width>101</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Oxygen-Sans</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <strikeout>false</strikeout>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+border-style:solid;
+border-radius:30px;
+
+background-color:rgb(152, 152, 152);
+color:rgb(44, 44, 44);
+
+}
+
+QPushButton::pressed
+{
+  background-color:rgb(86, 86, 86)
+}</string>
+    </property>
+    <property name="text">
+     <string>OPEN PROJECT</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>360</y>
+      <width>101</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Oxygen-Sans</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+border-style:solid;
+border-radius:30px;
+
+background-color:rgb(152, 152, 152);
+color:rgb(44, 44, 44);
+
+}
+
+QPushButton::pressed
+{
+  background-color:rgb(86, 86, 86)
+}</string>
+    </property>
+    <property name="text">
+     <string>NEW PROJECT</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>360</y>
+      <width>101</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Oxygen-Sans</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+border-style:solid;
+border-radius:30px;
+
+background-color:rgb(152, 152, 152);
+color:rgb(44, 44, 44);
+
+}
+
+QPushButton::pressed
+{
+  background-color:rgb(86, 86, 86)
+}</string>
+    </property>
+    <property name="text">
+     <string>BUILD</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>430</y>
+      <width>203</width>
+      <height>52</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <pointsize>8</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+ color:rgb(229, 229, 229);
+}</string>
+       </property>
+       <property name="text">
+        <string>PROJECT NAME-</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="font">
+        <font>
+         <pointsize>8</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+ color:rgb(229, 229, 229);
+}</string>
+       </property>
+       <property name="text">
+        <string>PACKAGE NAME -</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="lineEdit_2">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="toolTip">
+        <string notr="true"/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit
+{
+  background-color:rgb(120, 120, 120);
+  color:rgb(255, 255, 255);
+}</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="lineEdit">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="toolTip">
+        <string notr="true"/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit
+{
+  background-color:rgb(120, 120, 120);
+  color:rgb(255, 255, 255);
+}</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QCommandLinkButton" name="commandLinkButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>7</pointsize>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QCommandLinkButton
+{
+background-color:rgb(127, 127, 127);
+color:rgb(255, 255, 255);
+}</string>
+    </property>
+    <property name="text">
+     <string>Setup PAGE</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="proje">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>470</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Oxygen-Sans</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+ color:rgb(255, 255, 255);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>360</y>
+      <width>101</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Oxygen-Sans</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+border-style:solid;
+border-radius:30px;
+
+background-color:rgb(152, 152, 152);
+color:rgb(44, 44, 44);
+
+}
+
+QPushButton::pressed
+{
+  background-color:rgb(86, 86, 86)
+}</string>
+    </property>
+    <property name="text">
+     <string>RUN </string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>668</width>
+     <height>19</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionProje_a">
+   <property name="text">
+    <string>Proje aç</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
